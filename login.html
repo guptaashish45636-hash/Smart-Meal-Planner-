@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Smart Meal Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Smart Meal Planner</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html#meals">Meals</a>
+        <a href="index.html#calendar">Calendar</a>
+        <a href="index.html#shopping">Shopping List</a>
+        <a href="signup.html">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="login-main">
+    <section class="login-card" aria-labelledby="login-title">
+      <p class="eyebrow">Welcome back</p>
+      <h1 id="login-title">Login</h1>
+      <p class="hero-text">Sign in to continue planning your meals.</p>
+      <form id="login-form" class="login-form">
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="Enter your password" minlength="4" autocomplete="current-password" required>
+        <button class="button primary-button" type="submit">Login</button>
+      </form>
+      <p id="login-message" class="login-message" role="alert"></p>
+      <a class="profile-link" href="signup.html">Create New Profile</a>
+      <a class="back-link" href="index.html">&larr; Back to meal planner</a>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>Smart Meal Planner &middot; Your meals, your plan.</p></footer>
+  <script src="login.js"></script>
+</body>
+</html>

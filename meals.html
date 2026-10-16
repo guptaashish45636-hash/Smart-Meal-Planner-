@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meals | Smart Meal Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html">Smart Meal Planner</a><nav><a href="index.html#meals">Meals</a><a href="index.html#calendar">Calendar</a><a href="index.html#shopping">Shopping List</a><a href="login.html">Login</a></nav></div></header>
+  <main class="section container"><div class="section-heading"><div><p class="eyebrow">Your menu</p><h1>Meals</h1></div><button id="add-meal-button" class="button primary-button" type="button">+ Add Meal</button></div><div class="category-bar"><span class="category-label">Filter:</span><button class="category-button active" data-category="All" type="button">All</button><button class="category-button" data-category="Vegetarian" type="button">Vegetarian</button><button class="category-button" data-category="Non-Vegetarian" type="button">Non-Vegetarian</button><button class="category-button" data-category="Healthy" type="button">Healthy</button><button class="category-button" data-category="Snacks" type="button">Snacks</button><button class="category-button" data-category="Drinks" type="button">Drinks</button></div><div class="meal-groups"><section><div class="group-heading"><h2>Breakfast</h2><span id="breakfast-count" class="count">0 meals</span></div><div id="breakfast-list" class="meal-grid"></div></section><section><div class="group-heading"><h2>Lunch</h2><span id="lunch-count" class="count">0 meals</span></div><div id="lunch-list" class="meal-grid"></div></section><section><div class="group-heading"><h2>Dinner</h2><span id="dinner-count" class="count">0 meals</span></div><div id="dinner-list" class="meal-grid"></div></section></div></main><footer class="site-footer"><p>Smart Meal Planner</p></footer><dialog id="meal-dialog"><form id="meal-form" method="dialog"><h2 id="dialog-title">Add a meal</h2><input id="meal-id" type="hidden"><label for="meal-name">Meal name</label><input id="meal-name" required><label for="meal-type">Meal time</label><select id="meal-type"><option>Breakfast</option><option>Lunch</option><option>Dinner</option></select><label for="meal-category">Category</label><select id="meal-category"><option>Vegetarian</option><option>Non-Vegetarian</option><option>Healthy</option><option>Snacks</option><option>Drinks</option></select><div class="dialog-actions"><button id="cancel-dialog" type="button">Cancel</button><button class="button primary-button" type="submit">Save meal</button></div></form></dialog><script src="script.js"></script>
+</body>
+</html>

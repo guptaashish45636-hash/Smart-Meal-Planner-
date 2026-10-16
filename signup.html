@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Smart Meal Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Smart Meal Planner</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html#meals">Meals</a>
+        <a href="index.html#calendar">Calendar</a>
+        <a href="index.html#shopping">Shopping List</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="login-main">
+    <section class="login-card" aria-labelledby="signup-title">
+      <p class="eyebrow">Get started</p>
+      <h1 id="signup-title">Create New Profile</h1>
+      <p class="hero-text">Create your profile to save your meal planning data.</p>
+      <form id="register-form" class="login-form">
+        <label for="profile-name">Your name</label>
+        <input id="profile-name" type="text" placeholder="Enter your name" required>
+        <label for="profile-email">Email address</label>
+        <input id="profile-email" type="email" placeholder="you@example.com" required>
+        <label for="profile-password">Password</label>
+        <input id="profile-password" type="password" placeholder="At least 4 characters" minlength="4" required>
+        <button class="button primary-button" type="submit">Create Profile</button>
+      </form>
+      <p id="login-message" class="login-message" role="alert"></p>
+      <a class="back-link" href="login.html">Already have a profile? Login</a>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>Smart Meal Planner &middot; Your meals, your plan.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+/* Header styles kept in a separate file for reference. */
+.site-header { border-bottom: 1px solid #dce3dc; background: #ffffff; }
+.nav-wrap { display: flex; min-height: 66px; align-items: center; justify-content: space-between; gap: 24px; }
+.brand { color: #214d39; font-weight: bold; text-decoration: none; }
+nav { display: flex; gap: 24px; }
+nav a { color: #6b756e; text-decoration: none; }
+nav a:hover { color: #2f6b4f; }
